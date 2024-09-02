@@ -52,8 +52,17 @@ nav a:hover {
   border-color: white;
 }
 
-footer p {
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
   text-align: center;
   color: #bbb;
-  margin: 40px auto;
+  width: 100%;
+  padding: 10px;
 }
