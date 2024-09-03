@@ -1,16 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
 import * as styles from "../styles/home.module.css"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
-export default function Home() {
+export default function Home({ data }) {
+  const { title, description } = data.site.siteMetadata
   return (
     <Layout>
       <section className={styles.header}>
         <div>
           <h2>Personal Web</h2>
           <h3>React & Vue</h3>
-          <p>frontend developer & coder</p>
+          <p>
+            {title} - {description}
+          </p>
           <Link className={styles.btn} to="/projects">
             My Portfolio Projects
           </Link>
@@ -19,3 +22,14 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query SiteInfo {
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+  }
+`

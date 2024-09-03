@@ -9,4 +9,8 @@
  */
 module.exports = {
   plugins: [],
+  siteMetadata: {
+    title: "Joey Xia",
+    description: "web developer",
+  },
 }
