@@ -8,9 +8,21 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `interview`,
+        // Path to the directory
+        path: `${__dirname}/src/interview/`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "Joey Xia",
     description: "web developer",
+    contact: "whitenight.xiaxu@gmail.com",
   },
 }
