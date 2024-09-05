@@ -10,6 +10,8 @@
 module.exports = {
   plugins: [
     "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,6 +19,15 @@ module.exports = {
         name: `interview`,
         // Path to the directory
         path: `${__dirname}/src/interview/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `images`,
+        // Path to the directory
+        path: `${__dirname}/src/images/`,
       },
     },
   ],
