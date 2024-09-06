@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <div className="content">{children}</div>
       <div className="footer">
         <footer>
-          <p>Copyright 2024 JoeyXia</p>
+          <p>Copyright 2024 Joey Xia</p>
         </footer>
       </div>
     </div>
