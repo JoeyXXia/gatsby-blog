@@ -21,15 +21,6 @@ module.exports = {
         path: `${__dirname}/src/interview/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        // The unique name for each instance
-        name: `images`,
-        // Path to the directory
-        path: `${__dirname}/src/images/`,
-      },
-    },
   ],
   siteMetadata: {
     title: "Joey Xia",
