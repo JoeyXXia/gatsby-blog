@@ -15,7 +15,7 @@ export default function Home({ data }) {
             {title} - {description}
           </p>
           <Link className={styles.btn} to="/projects">
-            My Portfolio Projects
+            My Interview Projects
           </Link>
         </div>
       </section>
